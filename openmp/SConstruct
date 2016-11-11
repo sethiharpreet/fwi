@@ -1,0 +1,12 @@
+import os
+
+env = Environment(ENV = os.environ,CC='gcc')
+env.Append(CCFLAGS=['-fopenmp'])
+env.Prepend(LIBS=['m'])
+ldflags='-fopenmp'
+
+mod=env.Program('modeling.exe','modeling.c',LINKFLAGS=ldflags)
+srcfwi=env.Program('fwi.exe','fwi.c',LINKFLAGS=ldflags)
+
+Depends(mod,['gp.bin','functions.c'])
+Depends(srcfwi,['gp.bin','shots.bin','functions.c'])

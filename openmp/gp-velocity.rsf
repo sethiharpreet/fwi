@@ -1,0 +1,19 @@
+1.7	sfmath	code/acoustic/gaussian:	harpreet@harpreet-Ideapad-Z570	Fri Sep  2 00:21:01 2016
+
+	x2=1
+	d2=0.008
+	n2=400
+	o1=0
+	o2=4
+	label1="z"
+	data_format="native_float"
+	label2="x"
+	label="Velocity"
+	esize=4
+	in="/var/tmp/code/acoustic/gaussian/gp-velocity.rsf@"
+	unit1="km"
+	unit2="km"
+	unit="km/s"
+	x1=0
+	d1=0.004
+	n1=400

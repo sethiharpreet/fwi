@@ -1,0 +1,2 @@
+/var/spool/slurmd/job00034/slurm_script: line 8: scons: command not found
+/var/spool/slurmd/job00034/slurm_script: line 9: /home/harpreet: is a directory

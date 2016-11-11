@@ -1,0 +1,29 @@
+1.7	sfsegyread	fwi/Microseismic_FWI/code:	harpreet@harpreet-Ideapad-Z570	Thu Aug 18 23:52:42 2016
+
+	d2=1
+	o1=0
+	n2=13601
+	o2=0
+	label1="Time"
+	data_format="native_float"
+	head="tfile"
+	label2="Trace"
+	esize=4
+	in="stdout"
+	unit1="s"
+	d1=0
+	n1=2801
+	in="stdin"
+
+1.7	sfput	fwi/Microseismic_FWI/code:	harpreet@harpreet-Ideapad-Z570	Thu Aug 18 23:52:42 2016
+
+	unit2=km
+	label1=Depth
+	d2=.001249
+	label2=Distance
+	data_format="native_float"
+	o1=0
+	in="/var/tmp/fwi/Microseismic_FWI/code/density.rsf@"
+	unit1=km
+	o2=0
+	d1=.001249
