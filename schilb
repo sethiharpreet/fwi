@@ -1,0 +1,7 @@
+from rsf.proj import *
+env = Environment(ENV = os.environ,CC='gcc')
+env.Prepend(CPPPATH=['/home/harpreet/madagascar-1.7/include'],
+			LIBPATH = ['/home/harpreet/madagascar-1.7/lib'] ,
+			LIBS = ['m','rsf'] )
+ldflags = '-I'+env['CPPPATH'][0]
+hilb=env.Program('hilbert.exe','hilbert.c',LINKFLAGS=ldflags)
