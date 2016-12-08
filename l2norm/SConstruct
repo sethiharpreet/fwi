@@ -1,0 +1,12 @@
+import os
+
+env = Environment(ENV = os.environ,CC='gcc')
+env.Append(CCFLAGS=['-fopenmp'])
+env.Prepend(LIBS=['m'])
+ldflags='-fopenmp'
+
+mod=env.Program('modeling.exe','modeling.c',LINKFLAGS=ldflags)
+fwi=env.Program('fwi.exe','fwi.c',LINKFLAGS=ldflags)
+
+Depends(mod,['gvel.bin','func.c'])
+Depends(fwi,['gvel.bin','dobs.bin','func.c'])
